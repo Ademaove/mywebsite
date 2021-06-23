@@ -1,5 +1,5 @@
 <?php
-require('include/db.php');
+//require('include/db.php');
 
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -15,7 +15,7 @@ $query_builder = TRUE;
 //mysqli_connect($cleardb_server, '', '', '');
 
 $db = mysqli_connect('remotemysql.com', 'pz8r43zgzu', 'oCdQQyIfRE','pz8r43zgzu') or die("Database can
-'t be connected!");
+'t be connected, Try again!");
 $query = "SELECT * FROM home, section_control, social_media, personal_info, skills, about";
 $run = mysqli_query($db, $query);
 //if($run)
