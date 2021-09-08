@@ -14,7 +14,7 @@ $query_builder = TRUE;
 //$db = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 //mysqli_connect($cleardb_server, '', '', '');
 
-$db = mysqli_connect('remotemysql.com', 'pz8r43zgzu', 'oCdQQyIfRE','pz8r43zgzu') or die("Database can
+$db = mysqli_connect('pei17y9c5bpuh987.chr7pe7iynqr.eu-west-1.rds.amazonaws.com', 'obe1fhdt4l8xfqel', 'y3bfgyn9cqn3gidt','sjyh5ivm7tgat82v') or die("Database can
 't be connected, Try again!");
 $query = "SELECT * FROM home, section_control, social_media, personal_info, skills, about";
 $run = mysqli_query($db, $query);
